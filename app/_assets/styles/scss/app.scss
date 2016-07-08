@@ -1,5 +1,13 @@
-/* app css stylesheet */
-
+@import "compass/css3/text-shadow";
+@import "compass/css3/border-radius";
+html,
+body{
+  background-color: blue;
+  @include single-text-shadow(lighten(#000, 10%), 5px, 5px, 35px);
+  font-size: 30px;
+  @include border-top-right-radius(30px);
+  border: #000 2px solid;
+}
 .menu {
   list-style: none;
   border-bottom: 0.1em solid black;

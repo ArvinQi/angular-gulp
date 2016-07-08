@@ -1,0 +1,1 @@
+{"version":3,"sources":["ap.scss"],"names":[],"mappings":"AAAA;;EAEI,mBAAkB,EAAA","file":"ap.css","sourcesContent":["html,\r\nbody{\r\n    background: yellow;\r\n}"],"sourceRoot":"/source/"}

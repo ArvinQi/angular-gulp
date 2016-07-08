@@ -1,12 +1,18 @@
-/* app css stylesheet */
+html,
+body {
+  background-color: blue;
+  text-shadow: 5px 5px 35px #1a1a1a;
+  font-size: 30px;
+  border-top-right-radius: 30px;
+  border: #000 2px solid; }
+
 .menu {
   list-style: none;
   border-bottom: 0.1em solid black;
   margin-bottom: 2em;
   padding: 0 0 0.5em;
   border-radius: 1px;
-  -webkit-box-shadow: red 1px 2px 2px;
-          box-shadow: red 1px 2px 2px; }
+  box-shadow: red 1px 2px 2px; }
 
 .menu:before {
   content: "["; }

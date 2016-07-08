@@ -1,15 +1,14 @@
 var gulp   = require('gulp');
 var config = require('../../config').watch;
-var reload = require('browser-sync').reload;
+var browserSync = require('browser-sync');
+// var reload = require('browser-sync').reload;
 /**
  * Start browsersync task and then watch files for changes
  */
 gulp.task('watch', ['browserSync'], function() {
-  gulp.watch(option.less.src, ['less']);
-    gulp.watch([root + '/**/*.css']).on('change', function (event) {
-        // console.log('Event type: ' + event.type);
-        // console.log('Event path: ' + event.path);
+    gulp.watch([config.styles, config.scripts, config.htmls, config.images]).on('change', function (event) {
         gulp.src(event.path)
-            .pipe(browserSync.reload({ stream: true }));
+            // .pipe(browserSync.reload({ stream: true }));
+            .pipe(browserSync.stream());
     });
 });

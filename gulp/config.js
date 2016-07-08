@@ -8,8 +8,8 @@ var productionAssets = 'build/production/assets';
 
 module.exports = {
   sass: {
-    src: srcAssets + '/scss/**/*.{sass,scss}',
-    dest: developmentAssets + '/css',
+    src: srcAssets + '/styles/scss/**/*.{sass,scss}',
+    dest: developmentAssets + '/styles/css',
     options: {
       noCache: true,
       compass: true,
@@ -50,6 +50,9 @@ module.exports = {
     }
   },
   watch: {
-    
+    htmls: src + '**/*.html',
+    styles:  srcAssets + '/styles/**/*.css',
+    scripts: srcAssets + '/javascripts/**/*.js',
+    images:  srcAssets + '/images/**/*'
   },
 };
